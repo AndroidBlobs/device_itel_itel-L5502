@@ -1,0 +1,40 @@
+#
+# from device/sprd/sharkle/sp9832e_1h10_go/system.prop
+#
+# Default density config, 240 for WVGA
+#ro.sf.lcd_density=240
+#ro.sf.lcd_width=54
+#ro.sf.lcd_height=96
+ro.product.hardware=sp9832e_1h10_go
+# Set Opengl ES Version
+#ro.opengles.version=196609
+
+# ro.fm.chip.port.UART.androidm=true
+
+# FRP property for pst device
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist
+
+#enable audio nr tuning
+ro.audio_tunning.nr=1
+
+#set low battery level for disable flash
+persist.sys.cam.battery.flash = 15
+
+#Enable sdcardfs feature
+ro.sys.sdcardfs=true
+persist.sys.sdcardfs=force_on
+
+#enable hdr+normal pic mode
+persist.sys.cam.normalhdr=true
+
+#Disable assistant touch
+ro.product.assistanttouch=false
+qemu.hw.mainkeys=0
+#audio hw config:two in one speaker
+ro.audio_tunning.dual_spk=0
+persist.sys.cam.zsl=true
+persist.sys.cam.voicephoto=false
+ro.launcher.customizeappsort=true
+#service.wait_for_bootanim=1
+ro.com.google.acsa=true
+#
